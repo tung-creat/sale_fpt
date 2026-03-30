@@ -665,3 +665,7 @@ function bindAllRegisterButtons() {
         }
     });
 }
+function togglePopup() {
+  var popup = document.getElementById("callPopup");
+  popup.style.display = (popup.style.display === "block") ? "none" : "block";
+}

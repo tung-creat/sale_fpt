@@ -1260,31 +1260,15 @@
 </div>
 
 <div class="toast-message" id="toastMsg">✅ Đã gửi thành công!</div>
-
-<!-- Facebook Customer Chat Plugin -->
-<div class="fb-customerchat" 
-     page_id="1362780638940855" 
-     theme_color="#0084ff" 
-     logged_in_greeting="Chào bạn! Chúng tôi có thể giúp gì cho bạn?" 
-     logged_out_greeting="Chào bạn! Chúng tôi có thể giúp gì cho bạn?">
+<div class="call-btn" onclick="togglePopup()">
+  📞
 </div>
-
+<div class="call-popup" id="callPopup">
+  <div>Gọi ngay:</div>
+  <strong>0345724682</strong>
+  <a href="tel:0345724682">📞 Gọi</a>
+</div>
 </body>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '1362780638940855',
-      xfbml            : true,
-      version          : 'v25.0'
-    });
-    
-    // Initialize Facebook Customer Chat
-    FB.Event.subscribe('customerchat.load', function() {
-      // Customer chat loaded
-    });
-  };
-</script>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 <script src="index.js"></script>
 </html>
